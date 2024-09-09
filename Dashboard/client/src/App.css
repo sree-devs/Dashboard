@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+ 
+ *{
+    padding:0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
+ }
+ /*colors and Styles(Default)*/
+html{
+    font-size:90%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.icon{
+    font-size:1.25rem;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    align-items: center;
+     gap: 1.5rem; 
+}
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #ffffff28;
+    padding: .8rem 1rem;
+    color: lightslategray;
+}
+.btn .icon{
+    margin-left: .5rem;
+}
+.btn:hover{
+    background-color: palegreen;
+    color:green;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+
+}
+
+.container{
+    position:relative;
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f8ffd2;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px grey;
+}
+/*hide scroll bar*/
+::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width:990px){
+    .heading{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width:918px){
+    .heading{
+        flex-direction:row;
+        align-items:center;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width:500px){
+    .heading{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}

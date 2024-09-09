@@ -1,0 +1,80 @@
+.activitySection{
+    flex-basis: 70%;
+
+    .heading{
+         width:100%;
+        justify-content: space-between;
+
+
+         h1{
+            font-size:1rem;
+            color: black;
+             font-weight:700;
+            
+         }
+        .btn{
+            border: 1px solid transparent;
+            position: relative;
+            left:20px;
+        }
+        .btn:hover{
+            border: 1px solid palegreen;
+        }
+    }
+    .secContainer{
+        margin-top: 1rem;
+
+        .singleCustomer{
+            align-items: flex-start;
+            justify-content: space-between;
+
+
+            img{
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 0 2px 4px solid white;
+                margin-right: 1rem;
+            }
+
+
+            .customerDetails{
+                flex: 1;
+
+                .name{
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: black;
+                    display: block;
+
+                    small{
+                        font-weight: 500;
+                        color: black;
+                        font-size: small;
+
+                    }
+                     
+
+                }
+            }
+                .duration{
+                    color: black;
+                    font-weight: 500;
+                    font-size: .8rem;
+                    position: relative;
+                
+                }
+            
+        }
+    }
+
+
+}
+
+@media screen and (max-width:918px){
+    .activitySection{
+        width: 100%;
+    }
+
+}
